@@ -58,4 +58,22 @@ void main() {
     episodio.setTotalVisualizacoes(300);
     filtro.filtra(episodio);
 
+
+
+
+    // Inferencia de Tipo usando o var!
+    var filmeDoPaulo = new Filme();
+    filmeDoPaulo.setNome("Dogville");
+    filmeDoPaulo.setAnoDeLancamento(2003);
+    filmeDoPaulo.setDuracaoEmMinutos(200);
+    filmeDoPaulo.avalia(10);
+
+    ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+
+    listaDeFilmes.add(filmeDoPaulo);
+ listaDeFilmes.add(meuFilme);
+ listaDeFilmes.add(outroFilme);
+ System.out.println("Tamanho da Lista: " + listaDeFilmes.size());
+ System.out.println("Primeiro Filme: " + listaDeFilmes.get(0).getNome());
+ System.out.println(listaDeFilmes);
 }
